@@ -118,7 +118,10 @@ function Alert({ id, fade }) {
   return (
     <div>
       {alerts.map((alert, index) => (
-        <div className="alert alert-warning shadow-lg z-50 fixed m-auto w-1/5">
+        <div
+          className="alert alert-warning shadow-lg z-50 fixed m-auto w-1/5"
+          key={index}
+        >
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
