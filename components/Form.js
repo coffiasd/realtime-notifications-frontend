@@ -50,7 +50,7 @@ export default function Subscribe() {
 
         const accounts = JSON.parse(localStorage.getItem("walletconnect"));
 
-        const subs = []
+        const subs = [];
         if (tt == 1) {
             if (receiverChecked) {
                 subs.push(2);
@@ -102,10 +102,10 @@ export default function Subscribe() {
         axios.get('/v1/sub/sub-list?address=' + accounts.accounts[0])
             .then(function (response) {
                 // console.log(response.data.data);
-                if (response.data.data.includes(1)) {
+                if (response.data.data != null && response.data.data.includes(1)) {
                     setSenderChecked(true);
                 }
-                if (response.data.data.includes(2)) {
+                if (response.data.data != null && response.data.data.includes(2)) {
                     setReceiverChecked(true);
                 }
                 return response;

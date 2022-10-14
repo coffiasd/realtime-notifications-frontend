@@ -8,7 +8,7 @@ const nextConfig = {
       // and static files we proxy any other requests
       {
         source: '/v1/:path*',
-        destination: 'http://127.0.0.1:8080/v1/:path*', // Proxy to Backend
+        destination: process.env.NEXT_PUBLIC_HOSTNAME + '/v1/:path*', // Proxy to Backend
         permanent: true,
       },
     ]
