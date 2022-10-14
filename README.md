@@ -21,7 +21,7 @@ Step by step to subscribe the blockchain events.
 
 Afert all steps done when you trigger events like send token or receive token from faucet you will receive pushed notifications in your mobile app, it's realtime.
 
-[clike me to view the front-end website](https://www.google.com "subscribe")
+[clike me to view the front-end website](https://realtime-notifications-frontend-7ml7r55hk-ayden-lee.vercel.app "subscribe")
 
 ### How do i get the notify device ID ?
 
@@ -36,7 +36,12 @@ We will use this key on our front-end page so you need to copy it down anyway.
 
 ## back-end
 
-[click me to view back-end sourcecode](https://www.google.com "sourcecode")
+[click me to view back-end sourcecode](https://github.com/coffiasd/realtime-notifications-backend "sourcecode")
+
+### teck stack
+
+-golang
+-gin framework
 
 Below is a document tree of my golang back-end sourcecode.
 

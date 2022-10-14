@@ -2,6 +2,7 @@ import WalletConnect from "@walletconnect/client";
 import QRCodeModal from "algorand-walletconnect-qrcode-modal";
 import { useState, useEffect } from "react";
 import { FaBitcoin, FaAngleDown, FaTwitter, FaGithub } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function Header() {
     const [account, setAccount] = useState(null);
@@ -60,15 +61,19 @@ export default function Header() {
         }
     }, [])
 
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">Algorand</a>
-                <button className="btn gap-2 btn-ghost">
+                <button className="btn gap-2 btn-ghost" onClick={() => openInNewTab("https://twitter.com/coffiasse")}>
                     <FaTwitter size="1rem" />
                     Twitter
                 </button>
-                <button className="btn gap-2 btn-ghost">
+                <button className="btn gap-2 btn-ghost" onClick={() => openInNewTab("https://github.com/coffiasd/realtime-notifications-frontend")}>
                     <FaGithub size="1rem" />
                     Github
                 </button>
