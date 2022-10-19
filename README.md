@@ -21,27 +21,32 @@ Step by step to subscribe the blockchain events.
 
 Afert all steps done when you trigger events like send token or receive token from faucet you will receive pushed notifications in your mobile app, it's realtime.
 
-[clike me to view the front-end website](https://realtime-notifications-frontend-7ml7r55hk-ayden-lee.vercel.app "subscribe")
+[clike me to view the front-end website](https://realtime-notifications-frontend.vercel.app/ "subscribe")
 
 ### How do i get the notify device ID ?
 
 We push message to our user via a mobile app named pushover.
 You can download the app through the links below.
-[Andriod](https://play.google.com/store/apps/details?id=net.superblock.pushover)
-[IOS](https://apps.apple.com/us/app/pushover-notifications/id506088175?ls=1)
-[Website](https://pushover.net/)
+
+- [Andriod](https://play.google.com/store/apps/details?id=net.superblock.pushover)
+- [IOS](https://apps.apple.com/us/app/pushover-notifications/id506088175?ls=1)
+- [Website](https://pushover.net/)
+
 After you download the app go to setting page you will find the "PUSHOVER USER KEY".
 This key is actually what we want.
 We will use this key on our front-end page so you need to copy it down anyway.
 
+![alt PUSHID](public/PushId.jpg "PUSHID")
+
 ## back-end
 
-[click me to view back-end sourcecode](https://github.com/coffiasd/realtime-notifications-backend "sourcecode")
+[back-end github address](https://github.com/coffiasd/realtime-notifications-backend "sourcecode")
 
 ### teck stack
 
--golang
--gin framework
+- golang
+- gin framework
+- aws server
 
 Below is a document tree of my golang back-end sourcecode.
 
@@ -57,9 +62,11 @@ Below is a document tree of my golang back-end sourcecode.
 └─utils(common functions)
 ```
 
-We built back-end using golang and gin framework at the same time.This golang server provide a http protocol for our front-end clients to subcribe events or unsubcribe events.
-It's very convenient.All our users need to do is just login via mobile wallet like "Pera" and click some buttons.
+We build back-end using golang and GIN framework at the same time.This golang server provide a http protocol for our front-end clients to subcribe events or unsubcribe events.
+In this demo we only provide 2 kind of events.First is receive event when your wallet address receive some token we will send a message to your mobile through the app i mention above named "pushover". Make sure you already installed the app .And the second event is send event when your wallet address successfuly send some token to other account you will receive the app push message.
+It's very convenient.All of our users need to do is just login through mobile wallet like "Pera" and click some buttons.
+If you get any question feel free to contrct me. You can also find me in twitter @coffiasse
 
 ## youtube
 
-[click me to view a video on youtube of how to use it](https://www.google.com "sourcecode")
+[click me to view a video on youtube of how to use it](https://www.youtube.com/watch?v=J_2g5045Tao&ab_channel=ayden-hackathon "sourcecode")
