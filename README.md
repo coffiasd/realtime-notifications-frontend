@@ -10,6 +10,13 @@ This is gitcoin hackathon project.We built an algoland blockchain realtime notif
 
 ![alt Flowchart](public/Frontend.png "Flowchart")
 
+### tech stack
+
+- nextJS
+- tailwindcss
+- daisyUi
+- vercel platform
+
 We built frontend page using next.js and tailwindcss.After all job done we will deploy frontend codes on vercel platform.
 
 Step by step to subscribe the blockchain events.
@@ -23,13 +30,13 @@ Afert all steps done when you trigger events like send token or receive token fr
 
 [clike me to view the front-end website](https://realtime-notifications-frontend.vercel.app/ "subscribe")
 
-### How do i get the notify device ID ?
+### How do i get the notify push ID ?
 
 We push message to our user via a mobile app named pushover.
 You can download the app through the links below.
 
-- [Andriod](https://play.google.com/store/apps/details?id=net.superblock.pushover)
-- [IOS](https://apps.apple.com/us/app/pushover-notifications/id506088175?ls=1)
+- [Andriod Download Link](https://play.google.com/store/apps/details?id=net.superblock.pushover)
+- [IOS Download Link](https://apps.apple.com/us/app/pushover-notifications/id506088175?ls=1)
 - [Website](https://pushover.net/)
 
 After you download the app go to setting page you will find the "PUSHOVER USER KEY".
@@ -40,9 +47,9 @@ We will use this key on our front-end page so you need to copy it down anyway.
 
 ## back-end
 
-[back-end github address](https://github.com/coffiasd/realtime-notifications-backend "sourcecode")
+Back-end github source [https://github.com/coffiasd/realtime-notifications-backend](https://github.com/coffiasd/realtime-notifications-backend "sourcecode")
 
-### teck stack
+### tech stack
 
 - golang
 - gin framework
@@ -69,4 +76,4 @@ If you get any question feel free to contrct me. You can also find me in twitter
 
 ## youtube
 
-[click me to view a video on youtube of how to use it](https://www.youtube.com/watch?v=J_2g5045Tao&ab_channel=ayden-hackathon "sourcecode")
+Youtube video address [Link](https://www.youtube.com/watch?v=J_2g5045Tao&ab_channel=ayden-hackathon "sourcecode")
