@@ -55,6 +55,10 @@ Back-end github source [https://github.com/coffiasd/realtime-notifications-backe
 - gin framework
 - aws server
 
+### http api document
+
+view http api document through [POSTMAN](https://documenter.getpostman.com/view/151598/2s847MpA2X "postman")
+
 Below is a document tree of my golang back-end sourcecode.
 
 ```
