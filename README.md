@@ -58,6 +58,7 @@ Back-end github source [https://github.com/coffiasd/realtime-notifications-backe
 ### http api document
 
 view http api document through [POSTMAN](https://documenter.getpostman.com/view/151598/2s847MpA2X "postman")
+![alt postman](public/postman.png "PUSpostmanHID")
 
 Below is a document tree of my golang back-end sourcecode.
 
